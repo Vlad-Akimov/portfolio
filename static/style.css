@@ -38,7 +38,7 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    height: 6%;
+    height: 7%;
     width: 100%;
     padding: 1.6rem 5%;
     background: var(--rgba-color);
@@ -69,7 +69,7 @@ section {
 }
 
 .navbar {
-    max-width: 60%;
+    max-width: 70%;
 }
 
 .navbar a {
@@ -108,7 +108,7 @@ section {
 .home {
     display: flex;
     align-items: center;
-    padding: 0 10%
+    padding: 0 5%
 }
 
 .home-content {
@@ -269,9 +269,9 @@ section {
     width: 450px;
     display: flex;
     right: 0;
-    padding-right: 7%;
+    padding-right: 5%;
     justify-content: space-between;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .home-sci::before {
@@ -327,7 +327,7 @@ section {
 
 .home-imgHover {
     position: absolute;
-    top: 30;
+    top: 7%;
     right: 2.5%;
     width: 95%;
     height: 86%;
