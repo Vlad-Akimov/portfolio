@@ -38,6 +38,7 @@ section {
     position: fixed;
     top: 0;
     left: 0;
+    height: 6%;
     width: 100%;
     padding: 1.6rem 5%;
     background: var(--rgba-color);
@@ -60,7 +61,7 @@ section {
     position: fixed;
     top: 0;
     right: 0;
-    width: 105%;
+    width: 100%;
     height: 100%;
     background: var(--bg-color);
     animation: showRight 2s ease forwards;
@@ -260,7 +261,7 @@ section {
 
 .home-sci {
     position: absolute;
-    bottom: 18px;
+    bottom: 1.5%;
     width: 350px;
     display: flex;
     justify-content: space-between;
