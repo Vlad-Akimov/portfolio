@@ -595,6 +595,7 @@ span {
     display: inline-flex;
     left: 50%;
     transform: translateX(-50%);
+    gap: 1rem;
 }
 
 .contact form {
@@ -835,7 +836,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .navbar a {
-        font-size: 120%
+        font-size: 110%
     }
 
     .home-content {
