@@ -836,6 +836,10 @@ section:nth-child(odd) .animate.scroll,
         justify-content: center;
     }
 
+    .navbar a {
+        font-size: 1.40rem;
+    }
+
     .home-content {
         display: flex;
         align-items: center;
