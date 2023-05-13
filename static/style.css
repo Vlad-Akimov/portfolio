@@ -16,7 +16,7 @@
     --second-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #00abf0;
-    --rgba-color: rgba(8, 27, 41, 0.4);
+    --rgba-color: rgba(8, 27, 41, 0.9);
     --gradient-bg-color: linear-gradient(149deg, rgba(0, 171, 240, 1) 0%, rgba(187, 24, 148, 1) 80%, rgba(106, 57, 175, 1) 100%);
     --gradient-text-color: linear-gradient(149deg, #00abf0, #00abf0, #1806a1, #00abf0, #00abf0);
 }
@@ -742,8 +742,8 @@ span {
 
 .animate.scroll {
     transition: 1s ease;
-    transition-delay: calc(.3s / var(--i));
-    animation: none;
+    animation: showRight 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
 }
 
 section:nth-child(odd) .animate.scroll,
