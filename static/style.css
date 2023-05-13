@@ -837,7 +837,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .navbar a {
-        font-size: 1rem;
+        font-size: .1rem;
     }
 
     .home-content {
