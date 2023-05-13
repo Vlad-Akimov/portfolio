@@ -788,7 +788,7 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 600px) {
     html {
         font-size: 50%;
     }
@@ -799,7 +799,7 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
     .home-content h1 {
         font-size: 5.2rem;
     }
@@ -822,7 +822,7 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-width: 371px) {
+@media (max-width: 500px) {
     .home {
         justify-content: center;
     }
