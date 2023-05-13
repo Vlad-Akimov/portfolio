@@ -59,12 +59,12 @@ section {
 }
 
 .navbar {
-    max-width: 70%;
+    max-width: 90%;
     position: relative;
 }
 
 .navbar a {
-    font-size: 1.7rem;
+    font-size: 170%;
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
@@ -767,7 +767,7 @@ section:nth-child(odd) .animate.scroll,
 
 @media (max-width:1200px) {
     html {
-        font-size: 55%;
+        font-size: 60%;
     }
 }
 
@@ -794,10 +794,6 @@ section:nth-child(odd) .animate.scroll,
         font-size: 50%;
     }
 
-    .logo {
-        font-size: 2.4rem;
-    }
-
     .home-content h1 {
         display: flex;
         flex-direction: column;
@@ -805,9 +801,7 @@ section:nth-child(odd) .animate.scroll,
 }
 
 @media (max-width: 540px) {
-    .navbar a {
-        font-size: 1.48rem;
-    }
+
 
     .home-content h1 {
         font-size: 5.2rem;
@@ -836,8 +830,12 @@ section:nth-child(odd) .animate.scroll,
         justify-content: center;
     }
 
+    .logo {
+        font-size: 200%;
+    }
+
     .navbar a {
-        font-size: 1.3rem;
+        font-size: 120%
     }
 
     .home-content {
