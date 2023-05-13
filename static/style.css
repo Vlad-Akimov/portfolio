@@ -87,7 +87,7 @@ section {
 .home {
     display: flex;
     align-items: center;
-    padding: 0 5%
+    padding: 0 10%
 }
 
 .home-content {
@@ -161,8 +161,8 @@ section {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 345px;
-    height: 50px;
+    width: 90%;
+    height: 70px;
 }
 
 .btn-box {
@@ -178,12 +178,12 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 40%;
     height: 100%;
     background: var(--main-color);
     border: 2px solid var(--main-color);
     border-radius: 8px;
-    font-size: 19px;
+    font-size: 250%;
     color: var(--bg-color);
     text-decoration: none;
     font-weight: 600;
@@ -292,9 +292,9 @@ section {
 
 .home-imgHover::before {
     content: '';
-    position: fixed;
-    top: 0;
-    right: 0;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
     width: 120%;
     height: 150%;
     background: var(--bg-color);
@@ -372,7 +372,8 @@ span {
 
 .btn-box.btns {
     display: inline-block;
-    width: 150px;
+    width: 400px;
+    height: 50px;
 }
 
 .btn-box.btns a::before {
@@ -487,7 +488,7 @@ span {
 .skills .skills-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 10rem;
 }
 
 .skills-row .skills-column {
@@ -725,9 +726,9 @@ span {
 .animate {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+    right: -.2rem;
+    width: 125%;
+    height: 120%;
     background: var(--bg-color);
     z-index: 98;
 }
@@ -780,7 +781,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home {
-        padding: 0 4%;
+        padding: 0 6%;
     }
 
     .footer {
@@ -788,9 +789,13 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
     html {
         font-size: 50%;
+    }
+
+    .logo {
+        font-size: 2.4rem;
     }
 
     .home-content h1 {
@@ -799,7 +804,11 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 540px) {
+    .navbar a {
+        font-size: 1.48rem;
+    }
+
     .home-content h1 {
         font-size: 5.2rem;
     }
