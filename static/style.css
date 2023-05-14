@@ -232,7 +232,7 @@ section {
     width: 600px;
     display: flex;
     right: 0;
-    padding-right: 5%;
+    padding-right: 10%;
     justify-content: space-between;
     max-width: 90%;
 }
@@ -870,7 +870,7 @@ section:nth-child(odd) .animate.scroll,
 @media (max-height: 800px) {
     .home-sci {
         width: 400px;
-        padding-right: 4%;
+        padding-right: 10%;
     }
 }
 
