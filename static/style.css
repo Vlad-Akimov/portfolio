@@ -261,7 +261,7 @@ section {
 
 .home-sci a::before {
     content: '';
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 0;
@@ -867,7 +867,14 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-height: 500px) {
+@media (max-height: 800px) {
+    .home-sci {
+        width: 400px;
+        padding-right: 1.5%;
+    }
+}
+
+@media (max-height: 600px) {
     .home-sci {
         width: 250px;
         padding-right: 1.5%;
