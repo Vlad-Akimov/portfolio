@@ -870,14 +870,14 @@ section:nth-child(odd) .animate.scroll,
 @media (max-height: 800px) {
     .home-sci {
         width: 400px;
-        padding-right: 1.5%;
+        padding-right: 4%;
     }
 }
 
 @media (max-height: 600px) {
     .home-sci {
         width: 250px;
-        padding-right: 1.5%;
+        padding-right: 2%;
     }
 }
 
