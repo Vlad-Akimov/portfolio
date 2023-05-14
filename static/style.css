@@ -867,6 +867,13 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
+@media (max-height: 500px) {
+    .home-sci {
+        width: 250px;
+        padding-right: 1.5%;
+    }
+}
+
 @keyframes showRight {
     100% {
         width: 0;
