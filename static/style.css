@@ -850,6 +850,10 @@ section:nth-child(odd) .animate.scroll,
 }
 
 @media (max-width: 500px) {
+    html {
+        font-size: 40%;
+    }
+    
     .home {
         justify-content: center;
     }
