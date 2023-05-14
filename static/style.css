@@ -67,7 +67,7 @@ section {
     font-size: 170%;
     color: var(--text-color);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     margin-left: 3.3rem;
     transition: .3s;
 }
