@@ -800,12 +800,17 @@ section:nth-child(odd) .animate.scroll,
 
 @media (max-width: 600px) {
     .navbar a {
-        font-size: 130%;
+        font-size: 180%;
         max-width: 110%;
+        margin-left: 1.3rem;
     }
 
     .logo {
         font-size: 170%;
+    }
+
+    .header {
+        padding: 1.4rem 2%;
     }
 }
 
@@ -842,11 +847,11 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .logo {
-        font-size: 150%;
+        font-size: 140%;
     }
 
     .navbar a {
-        font-size: 110%
+        font-size: 130%
     }
 
     .home-content {
