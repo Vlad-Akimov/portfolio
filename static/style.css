@@ -805,10 +805,6 @@ section:nth-child(odd) .animate.scroll,
     html {
         font-size: 50%;
     }
-    
-    .home .home-content .text-animate {
-        font-size: 40%;
-    }
 
     section {
         padding: 10rem 4% 2rem;
