@@ -803,7 +803,11 @@ section:nth-child(odd) .animate.scroll,
 
 @media (max-width: 760px) {
     html {
-        font-size: 48%;
+        font-size: 50%;
+    }
+    
+    .home .home-content .text-animate {
+        font-size: 40%;
     }
 
     section {
