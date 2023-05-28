@@ -1,12 +1,12 @@
-Let sections = document.querySelectorAll('section');
-Let navLinks = document.querySelectorAll('header nav a');
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
-        Let top = window.scrollY;
-        Let offset = sec.offsetTop - 100;
-        Let height = sec.offsetHeight;
-        Let id = sec.getAttribute('id');
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 500;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + height) {
             navLinks.forEach(links => {
@@ -16,12 +16,14 @@ window.onscroll = () => {
 
             sec.classList.add('show-animate');
         }
-
         else {
             sec.classList.remove('show-animate');
         }
     });
 
-    Let header = document.querySelector('header');
+    const header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
+
+    const footer = document.querySelector('footer');
+    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
