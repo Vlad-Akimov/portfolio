@@ -52,7 +52,7 @@ section {
 }
 
 .header.sticky {
-    background: var(--bd-color);
+    background: var(--bg-color);
 }
 
 .logo {
