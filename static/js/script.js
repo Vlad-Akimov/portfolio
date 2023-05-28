@@ -4,7 +4,7 @@ const navLinks = document.querySelectorAll('header nav a');
 window.onscroll = () => {
     sections.forEach(sec => {
         const top = window.scrollY;
-        const offset = sec.offsetTop - 500;
+        const offset = sec.offsetTop - 300;
         const height = sec.offsetHeight;
         const id = sec.getAttribute('id');
 
@@ -22,7 +22,7 @@ window.onscroll = () => {
     });
 
     const header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 100);
+    header.classList.toggle('sticky', window.scrollY > 1000);
 
     const footer = document.querySelector('footer');
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
