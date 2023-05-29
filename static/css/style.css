@@ -16,7 +16,8 @@
     --second-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #00abf0;
-    --rgba-color: rgba(8, 27, 41, 0.9);
+    --rgba-main-color: rgba(0, 171, 240, 0.5);
+    --rgba-color: rgba(8, 27, 41, 0.6);
     --gradient-bg-color: linear-gradient(149deg, rgba(0, 171, 240, 1) 0%, rgba(187, 24, 148, 1) 80%, rgba(106, 57, 175, 1) 100%);
     --gradient-text-color: linear-gradient(149deg, #00abf0, #00abf0, #1806a1, #00abf0, #00abf0);
 }
@@ -839,19 +840,63 @@ section:nth-child(odd) .animate.scroll,
     section {
         padding: 10rem 4% 2rem;
     }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--rgba-main-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        z-index: 1;
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar .active-nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: var(--rgba-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav {
+        transition-delay: .25s;
+        left: 0;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transform: .25s;
+    }
 }
 
 @media (max-width: 600px) {
-    .navbar a {
-        font-size: 180%;
-        max-width: 110%;
-        margin-left: 1.3rem;
-    }
-
-    .logo {
-        font-size: 170%;
-    }
-
     .header {
         padding: 1.4rem 5%;
     }
@@ -891,14 +936,6 @@ section:nth-child(odd) .animate.scroll,
 
     .home {
         justify-content: center;
-    }
-
-    .logo {
-        font-size: 140%;
-    }
-
-    .navbar a {
-        font-size: 130%
     }
 
     .home-content {
