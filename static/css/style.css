@@ -139,7 +139,7 @@ section {
 
 .home-content .text-animate {
     position: relative;
-    width: 27rem;
+    width: 27.5rem;
 }
 
 .home-content .text-animate h3 {
@@ -151,7 +151,7 @@ section {
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
-    background-position: -27rem 0;
+    background-position: -27.5rem 0;
 }
 
 .home.show-animate .home-content .text-animate h3 {
@@ -1006,7 +1006,7 @@ section:nth-child(odd) .animate.scroll,
     0%,
     10%,
     100% {
-        background-position: -27rem 0;
+        background-position: -27.5rem 0;
     }
 
     65%,
