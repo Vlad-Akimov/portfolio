@@ -177,7 +177,7 @@ section {
 
 .home-content p {
     position: relative;
-    font-size: 1.6rem;
+    font-size: 2.1rem;
     margin: 2% 0 4%;
 }
 
@@ -755,7 +755,7 @@ span {
     position: absolute;
     top: 0;
     right: -.2rem;
-    width: 125%;
+    width: 115%;
     height: 110%;
     background: var(--bg-color);
     z-index: 98;
