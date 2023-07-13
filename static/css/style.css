@@ -309,7 +309,7 @@ section {
     width: 95%;
     height: 86%;
     border-radius: 450px;
-    background: url('../home.jpg') no-repeat;
+    background: url('../images/home_vignette.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     pointer-events: none;
@@ -352,8 +352,8 @@ span {
 
 .about-img {
     position: relative;
-    width: 25rem;
-    height: 25rem;
+    width: 55rem;
+    height: 55rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -363,7 +363,7 @@ span {
 .about-img img {
     width: 90%;
     border-radius: 50%;
-    border: .2rem solid var(--main-color);
+    border: .4rem solid var(--main-color);
 }
 
 .about-img .circle-spin {
@@ -376,8 +376,8 @@ span {
     border-radius: 50%;
     border-top: .2rem solid var(--second-bg-color);
     border-bottom: .2rem solid var(--second-bg-color);
-    border-left: .4rem solid var(--main-color);
-    border-right: .4rem solid var(--main-color);
+    border-left: .6rem solid var(--main-color);
+    border-right: .6rem solid var(--main-color);
     animation: aboutSpinner 8s linear infinite;
 }
 
