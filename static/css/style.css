@@ -25,14 +25,15 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    width:100%;
 }
 
 body {
     background: var(--bg-color);
-    color: var(--text-color)
+    color: var(--text-color);
+    width:100%;
+    overflow-x:hidden;
 }
-
-
 
 
 .skiptranslate {
@@ -270,7 +271,7 @@ section {
     bottom: 2%;
     width: 600px;
     display: flex;
-    right: 0;
+    right: 1%;
     padding-right: 10%;
     justify-content: space-between;
     max-width: 90%;
