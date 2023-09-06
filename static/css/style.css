@@ -323,7 +323,7 @@ section {
     right: 2.5%;
     width: 95%;
     height: 86%;
-    border-radius: 450px;
+    border-radius: 1000px;
     background: url('../images/home_v.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -969,7 +969,7 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 800px) and (max-width: 1500px){
     .home-sci {
         width: 400px;
         padding-right: 6%;
@@ -982,7 +982,7 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 600px) and (max-width: 1100px){
     .home-sci {
         width: 250px;
         padding-right: 2%;
