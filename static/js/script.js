@@ -38,3 +38,14 @@ window.onscroll = () => {
     const footer = document.querySelector('footer');
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
+
+
+var img = document.getElementsByTagName('img');
+
+for(var i in img)
+{
+    img[i].oncontextmenu = function()
+    {
+        return false;
+    }
+}
