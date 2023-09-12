@@ -150,10 +150,7 @@ section {
 }
 
 .home-content h1 span {
-    background: var(--gradient-text-color);
-    animation: gradient 7s ease-in-out infinite;
-    animation-delay: 2.5s;
-    background-size: 1000%;
+    background: var(--main-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -722,6 +719,7 @@ span {
 
 .contact form .btn-box.btns .btn {
     cursor: pointer;
+    width: 100%;
 }
 
 .footer {
@@ -784,6 +782,10 @@ span {
 
 .footer-iconTop a:hover i {
     color: var(--main-color);
+}
+
+input:-webkit-autofill {
+  transition: all 5000s ease-in-out 0s;
 }
 
 .animate {
