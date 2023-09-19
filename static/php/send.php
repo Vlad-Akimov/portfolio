@@ -1,32 +1,25 @@
-$FullName = $_POST['FullName'];
-$email = $_POST['email'];
-$number = $_POST['number'];
-$emailSubject = $_POST['emailSubject'];
-$message = $_POST['message'];
+<?php
+// несколько получателей
+$to  = 'vladlenprk220506@gmail.com' . ', ';  // обратите внимание на запятую
+$to .= 'Vladlenprk@yandex.com';
+
+// тема письма
+$subject = 'Письмо с моего сайта';
+
+// текст письма
+$message = 'Пользователь' . $_POST['FullName'] . ' отправил вам письмо:<br />' . $_POST['message'] . '<br />
+Связяться с ним можно по email <a href="mailto:' . $_POST['email'] . '">' . $_POST['number'] . '</a>'
+;
+
+// Для отправки HTML-письма должен быть установлен заголовок Content-type
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
+
+// Дополнительные заголовки
+$headers .= 'To: Vladislav <vladlenprk220506@gmail.com>' . "\r\n"; // Свое имя и email
+$headers .= 'From: '  . $_POST['FullName'] . '<' . $_POST['email'] . '>' . "\r\n";
 
 
-$FullName = htmlspecialchars($FullName);
-$email = htmlspecialchars($email);
-$number = htmlspecialchars($number);
-$emailSubject = htmlspecialchars($emailSubject);
-$message = htmlspecialchars($message);
-
-
-$FullName = urldecode($FullName);
-$email = urldecode($email);
-$number = urldecode($number);
-$emailSubject = urldecode($emailSubject);
-$message = urldecode($message);
-
-
-$FullName = trim($FullName);
-$email = trim($email);
-$number = trim($number);
-
-
-if (mail("vladlenprk220506@gmail.com", "Заказ с сайта", "ФИО:".$FullName.". E-mail: ".$email ,"From: .$email \r\n"))
- {
-    echo "сообщение успешно отправлено";
-} else {
-    echo "при отправке сообщения возникли ошибки";
-}
+// Отправляем
+mail($to, $subject, $message, $headers);
+?>
