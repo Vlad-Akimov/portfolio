@@ -45,7 +45,10 @@ body {
 }
 
 
-
+span {
+    color: var(--main-color);
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
 
 section {
     min-height: 100vh;
@@ -119,7 +122,7 @@ section {
 }
 
 .home .home-content {
-    max-width: 80rem;
+    max-width: 81rem;
 }
 
 .home .home-content h1,
@@ -135,6 +138,7 @@ section {
     font-weight: 100%;
     line-height: 130%;
     color: var(--text-color);
+    white-space: nowrap;
 }
 
 .home-content h1::before {
@@ -203,7 +207,7 @@ section {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
     height: 70px;
 }
 
@@ -214,6 +218,7 @@ section {
     width: 34.5rem;
     height: 5rem;
     margin-bottom: 3%;
+    font-style: italic;
 }
 
 .btn-box .btn {
@@ -362,10 +367,6 @@ section {
     font-size: 5rem;
     margin-bottom: 3rem;
     text-align: center;
-}
-
-span {
-    color: var(--main-color);
 }
 
 .about-img {
@@ -720,6 +721,7 @@ span {
 .contact form .btn-box.btns .btn {
     cursor: pointer;
     width: 100%;
+    font-style: italic;
 }
 
 .footer {
@@ -815,7 +817,7 @@ input:-webkit-autofill {
 
 .animate.scroll {
     top: -2px;
-    height: 115%;
+    height: 105%;
     transition: 1s ease;
     transition-delay: calc(.3s / var(--i));
     animation: none;
@@ -853,6 +855,10 @@ section:nth-child(odd) .animate.scroll,
 
     .footer {
         padding: 2rem 4%;
+    }
+
+    html {
+        font-size: 55%;
     }
 }
 
@@ -936,6 +942,10 @@ section:nth-child(odd) .animate.scroll,
 @media (max-width: 600px) {
     .header {
         padding: 1.4rem 5%;
+    }
+
+    .home-content h1 {
+        white-space: normal;
     }
 }
 
