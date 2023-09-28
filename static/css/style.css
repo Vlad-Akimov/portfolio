@@ -33,7 +33,7 @@ body {
     color: var(--text-color);
     width: 100%;
     overflow-x: hidden;
-    cursor: url('/static/cursors/arrow.cur'), auto;
+    cursor: url('/static/cursors/arrow.cur'), default;
 }
 
 
@@ -107,7 +107,7 @@ section {
 .navbar a.active,
 .logo:hover {
     color: var(--main-color);
-    cursor: url('/static/cursors/hand.cur'), auto;
+    cursor: url('/static/cursors/hand.cur'), pointer;
 }
 
 #menu-icon {
@@ -246,7 +246,7 @@ section {
 
 .btn-box .btn:hover {
     color: var(--main-color);
-    cursor: url('/static/cursors/hand.cur'), auto;
+    cursor: url('/static/cursors/hand.cur'), pointer;
 }
 
 .btn-box .btn:nth-child(2) {
@@ -311,7 +311,7 @@ section {
 
 .home-sci a:hover {
     color: var(--bg-color);
-    cursor: url('/static/cursors/hand.cur'), auto;
+    cursor: url('/static/cursors/hand.cur'), pointer;
 }
 
 .home-sci a::before {
@@ -779,7 +779,7 @@ section {
 }
 
 .footer-iconTop a:hover {
-    cursor: url('/static/cursors/hand.cur'), auto;
+    cursor: url('/static/cursors/hand.cur'), pointer;
 }
 
 .footer-iconTop a:hover::before {
@@ -805,7 +805,7 @@ input:-webkit-autofill {
     top: 0;
     right: -.2rem;
     width: 115%;
-    height: 110%;
+    height: 112%;
     background: var(--bg-color);
     z-index: 98;
 }
