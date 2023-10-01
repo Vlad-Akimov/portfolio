@@ -33,7 +33,7 @@ body {
     color: var(--text-color);
     width: 100%;
     overflow-x: hidden;
-    cursor: url('/static/cursors/arrow.cur'), default;
+    cursor: url('../cursors/arrow.cur'), default;
 }
 
 
@@ -107,13 +107,13 @@ section {
 .navbar a.active,
 .logo:hover {
     color: var(--main-color);
-    cursor: url('/static/cursors/hand.cur'), pointer;
+    cursor: url('../cursors/hand.cur'), pointer;
 }
 
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
-    cursor: url('/static/cursors/hand.cur'), pointer;
+    cursor: url('../cursors/hand.cur'), pointer;
     display: none;
 }
 
@@ -246,7 +246,7 @@ section {
 
 .btn-box .btn:hover {
     color: var(--main-color);
-    cursor: url('/static/cursors/hand.cur'), pointer;
+    cursor: url('../cursors/hand.cur'), pointer;
 }
 
 .btn-box .btn:nth-child(2) {
@@ -311,7 +311,7 @@ section {
 
 .home-sci a:hover {
     color: var(--bg-color);
-    cursor: url('/static/cursors/hand.cur'), pointer;
+    cursor: url('../cursors/hand.cur'), pointer;
 }
 
 .home-sci a::before {
@@ -725,7 +725,7 @@ section {
 }
 
 .contact form .btn-box.btns .btn {
-    cursor: url('/static/cursors/hand.cur'), pointer;
+    cursor: url('../cursors/hand.cur'), pointer;
     width: 100%;
     font-style: italic;
 }
@@ -779,7 +779,7 @@ section {
 }
 
 .footer-iconTop a:hover {
-    cursor: url('/static/cursors/hand.cur'), pointer;
+    cursor: url('../cursors/hand.cur'), pointer;
 }
 
 .footer-iconTop a:hover::before {
