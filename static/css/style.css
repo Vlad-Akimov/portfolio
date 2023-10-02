@@ -51,6 +51,40 @@ span {
     font-family: 'Arial Black', Gadget, sans-serif;
 }
 
+audio {
+    width: 100px;
+    height: 25px;
+    margin-left: 3.3rem;
+}
+
+audio:hover {
+    width: 150px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-toggle-closed-captions-button {
+    cursor: url('../cursors/hand.cur'), pointer;
+}
+
+audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
+    background-color: var(--main-color);
+}
+
+audio::-webkit-media-controls-timeline.closed,
+audio::-webkit-media-controls-current-time-display.closed,
+audio::-webkit-media-controls-time-remaining-display.closed {
+    display: none !important;
+}
+
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    display: none !important;
+}
+
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
@@ -885,7 +919,7 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
     html {
         font-size: 50%;
     }
