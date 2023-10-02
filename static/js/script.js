@@ -49,3 +49,9 @@ for(var i in img)
         return false;
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  let audio = document.querySelector('audio');
+
+  audio.volume = 0.2;
+}, false);
