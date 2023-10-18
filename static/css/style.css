@@ -175,6 +175,7 @@ section {
     line-height: 130%;
     color: var(--text-color);
     white-space: nowrap;
+    -webkit-text-stroke: 1.5px var(--bg-color);
 }
 
 .home-content h1::before {
@@ -237,6 +238,7 @@ section {
     position: relative;
     font-size: 2.1rem;
     margin: 2% 0 4%;
+    -webkit-text-stroke: 0.01px var(--bg-color);
 }
 
 .home-content .btn-box {
