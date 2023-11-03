@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans=serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    --rgba-main-color: rgba(0, 171, 240, 0.5);
+    --rgba-color: rgba(8, 27, 41, 0.6);
+    --gradient-bg-color: linear-gradient(149deg, rgba(0, 171, 240, 1) 0%, rgba(187, 24, 148, 1) 80%, rgba(106, 57, 175, 1) 100%);
+    --gradient-text-color: linear-gradient(149deg, #00abf0, #00abf0, #1806a1, #00abf0, #00abf0);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    width: 100%;
+    overflow-x: hidden;
+    cursor: url('../cursors/arrow.cur'), default;
+}
+
+section {
+    padding: 10rem 9% 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border: .4rem solid var(--main-color);
+}
+
+audio {
+    width: 100px;
+    height: 25px;
+    margin-left: 3.3rem;
+}
+
+audio:hover {
+    width: 150px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-toggle-closed-captions-button {
+    cursor: url('../cursors/hand.cur'), pointer;
+}
+
+audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
+    background-color: var(--main-color);
+}
+
+audio::-webkit-media-controls-timeline.closed,
+audio::-webkit-media-controls-current-time-display.closed,
+audio::-webkit-media-controls-time-remaining-display.closed {
+    display: none !important;
+}
+
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    display: none !important;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    padding: 1.6rem 5%;
+    background: var(--rgba-color);
+
+    border-image: var(--gradient-text-color);
+    border-top-style: solid;
+    border-top-width: 7px;
+    border-image-slice: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}
+
+.header.sticky {
+    background: var(--bg-color);
+}
+
+.logo {
+    position: relative;
+    font-size: 250%;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar {
+    max-width: 100%;
+    position: relative;
+}
+
+.navbar a {
+    font-size: 170%;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 3.3rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active,
+.logo:hover {
+    color: var(--main-color);
+    cursor: url('../cursors/hand.cur'), pointer;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: url('../cursors/hand.cur'), pointer;
+    display: none;
+}
+
+.Yandex1 {
+    display: flex;
+    justify-content: center;
+}
+
+.ZFTSH1 {
+    background: var(--second-bg-color);
+}
+
+.MV1 {
+}
+
+.MTUCI {
+    background: var(--second-bg-color);
+}
+
+.Yandex2 {
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+
+    border-image: var(--gradient-text-color);
+    border-bottom-style: solid;
+    border-bottom-width: 7px;
+    border-image-slice: 1;
+}
+
+.footer-text,
+.footer-iconTop {
+    position: relative;
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.footer-iconTop a::before {
+    content: '';
+    position: absolute;
+    top: 10;
+    left: 2;
+    width: 0;
+    height: 90%;
+    border-radius: .6rem;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-iconTop a:hover {
+    cursor: url('../cursors/hand.cur'), pointer;
+}
+
+.footer-iconTop a:hover::before {
+    width: 90%;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--bg-color);
+    transition: .5s;
+}
+
+.footer-iconTop a:hover i {
+    color: var(--main-color);
+}
+
+input:-webkit-autofill {
+  transition: all 5000s ease-in-out 0s;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 60%;
+    }
+
+    section {
+        padding: 5rem 4% 5rem;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--rgba-main-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        z-index: 1;
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar .active-nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: var(--rgba-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav {
+        transition-delay: .25s;
+        left: 0;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transform: .25s;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 1.4rem 5%;
+    }
+}
+
+@media (max-width: 540px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 45%;
+    }
+}
