@@ -566,6 +566,15 @@ section {
     font-size: 1.6rem;
     padding-top: .5rem;
     text-align: justify;
+    color: var(--text-color);
+}
+
+.education-content .content p a {
+    color: #ededed;
+}
+
+.education-content .content p a:hover {
+    cursor: url('../cursors/hand.cur'), pointer;
 }
 
 .skills {
@@ -841,7 +850,7 @@ input:-webkit-autofill {
     top: 0;
     right: -.2rem;
     width: 115%;
-    height: 112%;
+    height: 113%;
     background: var(--bg-color);
     z-index: 98;
 }
