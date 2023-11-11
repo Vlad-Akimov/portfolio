@@ -561,6 +561,7 @@ section {
 
 .education-content .content p a {
     color: #ededed;
+    text-decoration: underline;
 }
 
 .education-content .content p a:hover {
