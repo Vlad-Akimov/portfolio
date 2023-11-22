@@ -1056,7 +1056,7 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-height: 600px) and (max-width: 1100px){
+@media (max-height: 600px) and (min-width: 450px){
     .home-sci {
         width: 250px;
         padding-right: 2%;
