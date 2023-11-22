@@ -1048,12 +1048,7 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-height: 800px) and (max-width: 1500px){
-    .home-sci {
-        width: 400px;
-        padding-right: 6%;
-    }
-
+@media (max-height: 450px) and (max-width: 1500px){
     .home .home-content h1,
     .home .home-content .text-animate,
     .home .home-content p {
