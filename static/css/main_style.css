@@ -450,12 +450,12 @@ section {
 
 .btn-box.btns {
     display: inline-block;
-    width: 35%;
+    max-width: 90%;
     height: 70px;
 }
 
 .btn-box.btns a {
-    width: 70%;
+    width: 100%;
 }
 
 .btn-box.btns a::before {
