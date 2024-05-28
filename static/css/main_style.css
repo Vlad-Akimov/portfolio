@@ -270,38 +270,58 @@ section {
     transition: .5s;
 }
 
-.btn-box .btn:hover {
-    color: var(--main-color);
-    cursor: url('../cursors/hand.cur'), pointer;
-}
+.btn-box .btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: var(--bg-color);
+        z-index: -1;
+        transition: .5s;
+    }
 
 .btn-box .btn:nth-child(2) {
     background: var(--bg-color);
     color: var(--main-color);
 }
 
-.btn-box .btn:nth-child(2):hover {
-    color: var(--bg-color);
+@media (hover: hover) {
+    .btn-box .btn:hover {
+        color: var(--main-color);
+        cursor: url('../cursors/hand.cur'), pointer;
+    }
+
+    .btn-box .btn:nth-child(2):hover {
+        color: var(--bg-color);
+    }
+
+    .btn-box .btn:nth-child(2)::before {
+        background: var(--main-color);
+    }
+
+    .btn-box .btn:hover::before {
+        width: 100%;
+    }
 }
 
-.btn-box .btn:nth-child(2)::before {
-    background: var(--main-color);
-}
+@media (hover: none) {
+    .btn-box .btn:nth-child(2):active {
+        color: var(--bg-color);
+    }
 
-.btn-box .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--bg-color);
-    z-index: -1;
-    transition: .5s;
-}
+    .btn-box .btn:nth-child(2)::before {
+        background: var(--main-color);
+    }
 
-.btn-box .btn:hover::before {
-    width: 100%;
+    .btn-box .btn:nth-child(1):active {
+        color: var(--main-color);
+    }
+
+    .btn-box .btn:active::before {
+        width: 100%;
+    }
 }
 
 .home-sci {
@@ -335,11 +355,6 @@ section {
     transition: .5s;
 }
 
-.home-sci a:hover {
-    color: var(--bg-color);
-    cursor: url('../cursors/hand.cur'), pointer;
-}
-
 .home-sci a::before {
     content: '';
     position: absolute;
@@ -352,8 +367,29 @@ section {
     transition: .5s;
 }
 
-.home-sci a:hover::before {
-    width: 100%;
+@media (hover: hover) {
+    .home-sci a:hover {
+        color: var(--bg-color);
+        cursor: url('../cursors/hand.cur'), pointer;
+    }
+
+    .home-sci a:hover::before {
+        width: 100%;
+    }
+}
+
+@media (hover: none) {
+    .home-sci a:active {
+        color: var(--bg-color);
+    }
+
+    .home-sci a:active::before {
+        background: var(--main-color);
+    }
+
+    .home-sci a:active::before {
+        width: 100%;
+    }
 }
 
 .home-imgHover {
@@ -533,8 +569,17 @@ section {
     transition: .5s;
 }
 
-.education-content .content:hover::before {
-    width: 100%;
+@media (hover: hover) {
+    .education-content .content:hover::before {
+        width: 100%;
+    }
+}
+
+@media (hover: none) {
+    .education-content .content:active::before {
+        width: 100%;
+        background: var(--second-bg-color);
+    }
 }
 
 .education-content .content .year {
@@ -620,8 +665,17 @@ section {
     transition: .5s;
 }
 
-.skills-box .skills-content:hover::before {
-    width: 100%;
+@media (hover: hover) {
+    .skills-box .skills-content:hover::before {
+        width: 100%;
+    }
+}
+
+@media (hover: none) {
+    .skills-box .skills-content:active::before {
+        width: 100%;
+        background: var(--bg-color)
+    }
 }
 
 .skills-content .progress {
@@ -814,26 +868,39 @@ section {
     transition: .5s;
 }
 
-.footer-iconTop a:hover {
-    cursor: url('../cursors/hand.cur'), pointer;
-}
-
-.footer-iconTop a:hover::before {
-    width: 90%;
-}
-
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--bg-color);
     transition: .5s;
 }
 
-.footer-iconTop a:hover i {
-    color: var(--main-color);
+@media (hover: hover) {
+    .footer-iconTop a:hover {
+        cursor: url('../cursors/hand.cur'), pointer;
+    }
+
+    .footer-iconTop a:hover i {
+        color: var(--main-color);
+    }
+
+    .footer-iconTop a:hover::before {
+        width: 90%;
+    }
+}
+
+@media (hover: none) {
+    .footer-iconTop a:active i {
+        color: var(--main-color);
+    }
+
+    .footer-iconTop a:active::before {
+        width: 90%;
+        background: var(--bg-color);
+    }
 }
 
 input:-webkit-autofill {
-  transition: all 5000s ease-in-out 0s;
+    transition: all 5000s ease-in-out 0s;
 }
 
 .animate {
