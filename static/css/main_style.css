@@ -306,7 +306,7 @@ section {
     }
 }
 
-@media (hover: none) {
+@media (hover: none) and (pointer: coarse) {
     .btn-box .btn:nth-child(2):active {
         color: var(--bg-color);
     }
@@ -378,7 +378,7 @@ section {
     }
 }
 
-@media (hover: none) {
+@media (hover: none) and (pointer: coarse) {
     .home-sci a:active {
         color: var(--bg-color);
     }
@@ -575,7 +575,7 @@ section {
     }
 }
 
-@media (hover: none) {
+@media (hover: none) and (pointer: coarse) {
     .education-content .content:active::before {
         width: 100%;
         background: var(--second-bg-color);
@@ -671,7 +671,7 @@ section {
     }
 }
 
-@media (hover: none) {
+@media (hover: none) and (pointer: coarse) {
     .skills-box .skills-content:active::before {
         width: 100%;
         background: var(--bg-color)
@@ -888,7 +888,7 @@ section {
     }
 }
 
-@media (hover: none) {
+@media (hover: none) and (pointer: coarse) {
     .footer-iconTop a:active i {
         color: var(--main-color);
     }
