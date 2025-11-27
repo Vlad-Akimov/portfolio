@@ -1091,18 +1091,6 @@ section:nth-child(odd) .animate.scroll,
 @media (max-width: 540px) {
     .home {
         padding: 0 6%;
-        justify-content: flex-start;
-        padding-top: 10rem;
-    }
-
-    .home-sci {
-        width: 100%;
-        max-width: 100%;
-        justify-content: center;
-        gap: 2rem;
-        padding-right: 0;
-        justify-self: center;
-        margin-top: 3rem;
     }
 
     .home-content h1 {
@@ -1134,15 +1122,6 @@ section:nth-child(odd) .animate.scroll,
 
     .home {
         justify-content: center;
-    }
-
-    .home-sci {
-        gap: 1.5rem;
-    }
-    
-    .home-sci a {
-        width: 35px;
-        height: 35px;
     }
 
     .home-content {
